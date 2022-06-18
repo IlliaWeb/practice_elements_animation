@@ -1,0 +1,507 @@
+body{
+    margin: 50px;
+}
+
+/*Consulting*/
+.consulting__wrapper{
+    width: 171px;
+    height: 171px;
+    display: block;
+    transform: rotate(45deg);
+}
+.consulting {
+    width: 140px;
+    height: 140px;
+}
+.consulting__angle__1 {
+    position: relative;
+    top: 0px;
+    left: 85px;
+    transform: rotate(270deg);
+}
+.consulting__angle__2 {
+    position: relative;
+    top: -56px;
+    left: 0px;
+    transform: rotate(180deg);
+}
+.consulting__angle__3 {
+    position: relative;
+    top: -69px;
+    left: 0px;
+    transform: rotate(90deg);
+}
+.consulting__angle__4 {
+    position: relative;
+    top: -125px;
+    left: 85px;
+    transform: rotate(0deg);
+}
+.angle {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    width: 56px;
+    height: 56px;
+}
+.square {
+    border: solid black;
+    border-width: 3px;
+    position: relative;
+    top: -63px;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+}
+
+ /*animation settings*/
+.consulting__wrapper:hover .consulting{
+    animation: consultanimation 1s ease-out 1 normal 0s both; 
+}
+ @keyframes consultanimation {
+        0%{
+            transform: scale(1, 1);
+        }
+        25%{
+            transform: scale(0.9, 0.9);
+        }
+        50%{
+            transform: scale(1.2, 1.2);
+        }
+        100%{
+            transform: scale(1, 1);
+        }
+    }
+.consulting__wrapper:hover .square{
+    animation: squareanimation 1s ease 1 normal 0s both;
+}
+@keyframes squareanimation {
+    0%{
+        transform: scale(1, 1);
+    }
+    25%{
+        transform: scale(1.2, 1.2) rotate(-25deg);
+    }
+    100%{
+        transform: scale(1, 1) rotate(180deg);
+        
+    }
+} 
+
+/*Extension*/
+.extension__wrapper{
+    margin: 50px 0 50px 0;
+    width: 170px;
+    height: 170px;
+}
+.extension {
+    width: 150px;
+    height: 150px;
+    display: block;
+    position: relative;
+}
+.extension__arrow_1 {
+    position: relative;
+    top: 0px;
+    left: 95px;
+    transform: rotate(90deg);
+}
+.extension__arrow_2 {
+    position: relative;
+    top: -55px;
+    left: 0px;
+    transform: rotate(0deg);
+}
+.extension__arrow_3 {
+    position: relative;
+    top: -93px;
+    left: 0px;
+    transform: rotate(270deg);
+}
+.extension__arrow_4 {
+    position: relative;
+    top: -148px;
+    left: 95px;
+    transform: rotate(180deg);
+}
+.arrow {
+    width: 55px;
+    height: 55px;
+    border: 3px solid; 
+    border-color: black transparent transparent black;
+}
+.line{
+    display: block;
+    border:solid black;
+    border-width:3px 0 0 0; 
+    width:80px;
+}
+.extension__line_1{
+    transform: rotate(45deg);
+    position: relative;
+    top:-81px;
+    left:-10px;
+}
+.extension__line_2{
+    transform: rotate(135deg);
+    position: relative;
+    top:4px;
+    left:-10px;
+}
+.extension__line_3{
+    transform: rotate(-45deg);
+    position: relative;
+    bottom:152px;
+    left:80px;
+}
+.extension__line_4{
+    transform: rotate(-135deg);
+    position: relative;
+    bottom:66px;
+    left:81px;
+}
+
+.extension__white_box{
+    position: relative;
+    top: -75px;
+    left: 45px;
+    background-color:rgb(255, 255, 255);
+    width:65px;
+    height: 65px;
+    z-index: 2; 
+    transform: rotate(45deg);
+}
+
+/*animation settings*/
+.extension__wrapper:hover .extension{
+    animation: extensionarrow 1s ease 1 normal 0s both; 
+}
+ @keyframes extensionarrow {
+        0%{
+            transform: scale(1, 1);
+        }
+        50%{
+            transform: scale(1.2, 1.2);
+        }
+
+        100%{
+            transform: scale(1, 1);
+        }
+    }
+.extension__wrapper:hover .extension__white_box{
+    animation: whitebox 1s ease 1 normal 0s both; 
+}
+@keyframes whitebox {
+    0%{
+        transform: scale(1, 1) rotate(45deg);
+    }
+    15%{
+        transform: scale(1, 1) rotate(45deg);
+    }
+    50%{
+        transform: scale(1.5, 1.5) rotate(45deg);
+    }
+    100%{
+        transform: scale(1, 1) rotate(45deg);
+        
+    }
+} 
+
+/*fullcycle*/
+.fullcycle__wrapper {
+
+} 
+.fullcycle {
+    transform: rotate(65deg);
+    width: 150px;
+    height: 150px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.cycle_line{
+    width: 158px;
+    height: 30px;
+    background-color:rgb(255, 255, 255);
+}
+
+.fullcycle__line_1 {
+    position: relative;
+    top: 59px;
+    left:-4px;
+}
+.fullcycle__line_2 {
+    position: relative;
+    transform: rotate(90deg);
+    top: 29px;
+    left:-3px;
+}
+.cycle_arrow{
+    width: 30px;
+    height: 30px;
+    border: 3px solid; 
+    border-color: black transparent transparent black; 
+}
+.fullcycle__arrow_1 {
+    position: relative;
+    transform: rotate(115deg);
+    top: -70px;
+    left: 28px;
+}
+.fullcycle__arrow_2 {
+    position: relative;
+    transform: rotate(25deg);
+    top: -0px;
+    left: -9px;
+}
+.fullcycle__arrow_3 {
+    position: relative;
+    transform: rotate(295deg);
+    top: 3px;
+    left: 92px;
+}
+.fullcycle__arrow_4 {
+    position: relative;
+    transform: rotate(205deg);
+    top: -123px;
+    left: 124px;
+}
+/*animation settings*/
+.fullcycle:hover{
+    transition-duration: 1.5s;
+    animation: 1s ease-in-out 1 normal 0s both;
+    transform: rotate(425deg);
+}
+
+/*investment*/
+.investment__wrapper {
+    margin: 50px 0 50px 0;
+    width: 170px;
+    height: 170px;
+}
+.investment {
+    width: 170px;
+    height: 170px;
+}
+.investment__arrow_line_1 {
+    position: relative;
+    border:solid black;
+    border-width:0 0 3px 0; 
+    width:60px;
+    transform: rotate(-45deg);
+    top:89.5px;
+    left:12.5px;
+}
+.investment__arrow_line_2 {
+    position: relative;
+    border:solid black;
+    border-width:0 0 3px 0; 
+    width:40px;
+    transform: rotate(45deg);
+    top:80px;
+    left:57px;
+}
+.investment__arrow_line_3 {
+    position: relative;
+    border:solid black;
+    border-width:0 0 3px 0; 
+    width:80px;
+    transform: rotate(-45deg);
+    top:62px;
+    left:78px;
+}
+.investment__arrow_tip {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 3px solid; 
+    border-color: black transparent transparent black; 
+
+    transform: rotate(90deg);
+    top:31px;
+    left:118px;
+}
+.investment__white_block{
+    position: relative;
+    width:5px;
+    height:5px;
+    background-color:rgb(255, 255, 255);
+    top:4px;
+    left:139px;
+    transform: rotate(45deg) scale(0, 0);
+}
+.investment__line_animation{
+    position: relative;
+    width: 170px;
+    height: 40px;
+    top: 80px;
+}
+.investment__underline {
+    position: relative;
+    border:solid black;
+    border-width:0 0 3px 0; 
+    width:40px;
+    top:19px;
+    left:65px;
+    
+}
+.investment__underline_short_1 {
+    position: relative;
+    border:solid black;
+    border-width:0 0 3px 0; 
+    width:20px;
+    top:13px;
+    left: 130px;
+}
+.investment__underline_short_2 {
+    position: relative;
+    border:solid black;
+    border-width:0 0 3px 0; 
+    width:20px;
+    top:7px;
+    left:20px;
+}
+.investment__underline_anim{
+    position: relative;
+    border:solid rgb(255, 255, 255);
+    border-width:0 0 3px 0; 
+    width:5px;
+    top:22px;
+    left:60px;
+    z-index: 2;
+}
+.investment__underline_short_anim{
+    position: relative;
+    border:solid rgb(255, 255, 255);
+    border-width:0 0 3px 0; 
+    width:5px;
+    top:16px;
+    left: 125px;
+    z-index: 2;
+}
+.investment__underline_short_anim_2{
+    position: relative;
+    border:solid rgb(255, 255, 255);
+    border-width:0 0 3px 0; 
+    width:5px;
+    top:10px;
+    left:15px;
+    z-index: 2;
+}
+/*animation*/
+.investment__wrapper:hover .investment__white_block{
+    animation: white 1s ease-in 1 normal 0s both; 
+}
+@keyframes white {
+    0%{
+        transform: scale(0, 0) rotate(45deg);
+        top:74px;      
+        left:16px; 
+    }
+    20%{
+        transform: scale(4, 4) rotate(45deg); 
+    }
+    33%{
+        top:30px;      
+        left:61px;
+        transform: scale(1.2, 1.2) rotate(45deg);
+    }
+    66%{
+        top:55px;
+        left:87px;
+        transform: scale(1.4, 1.4) rotate(45deg);
+    }
+    71%{
+        
+        transform: scale(1, 1) rotate(45deg);
+    }
+    85%{
+        transform: scale(5, 5) rotate(45deg); 
+    }
+    99%{
+        top:4px;
+        left:139px;
+        transform: scale(1, 1) rotate(45deg);
+    }
+    100%{
+        transform: scale(0, 0) rotate(45deg); 
+    }
+} 
+
+ .investment__wrapper:hover .investment__arrow_tip{
+    animation: tip 1s ease-in 1 normal 0s both; 
+}
+@keyframes tip {
+    0%{
+        transform: scale(1, 1) rotate(90deg);
+    }
+    50%{
+        transform: scale(1.2, 1.2) rotate(90deg);
+        top:33px;
+        left:116px;
+    }
+    100%{
+        transform: scale(1, 1) rotate(90deg);
+    }
+}  
+
+.investment__wrapper:hover .investment__underline_short_anim{
+    animation: short_first 1s ease-in-out 1 normal 0s both; 
+}
+@keyframes short_first {
+    0%{
+        width:5px;
+        left: 125px;
+    }
+    50%{
+        left: 125px;
+        width:30px;
+    }
+    60%{
+        width:30px;
+    }
+    100%{
+        width:5px;
+        left: 150px;
+    }
+}
+.investment__wrapper:hover .investment__underline_short_anim_2{
+    animation: short_second 1s ease-in-out 1 normal 0s both; 
+}
+@keyframes short_second {
+    0%{
+        width:5px;
+        left:15px;
+    }
+    50%{
+        left:15px;
+        width:30px;
+    }
+    60%{
+        width:30px;
+    }
+    100%{
+        width:5px;
+        left: 40px;
+    }
+}
+.investment__wrapper:hover .investment__underline_anim{
+    animation: long_line 1s ease-in-out 1 normal 0s both; 
+}
+@keyframes long_line {
+    0%{
+        width:5px;
+        left:60px;
+    }
+    50%{
+        width:45px;
+        left:60px;
+    }
+    60%{
+        width:45px;
+    }
+    100%{
+        width:5px;
+        left: 105px;
+    }
+}
